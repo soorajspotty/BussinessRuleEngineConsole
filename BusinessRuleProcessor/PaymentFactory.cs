@@ -20,6 +20,8 @@ namespace BusinessRuleProcessor
                 iPaymentService = new PhysicalProductPayment();
             if (paymentType == Constants.BookPayment)
                 iPaymentService = new BookPayment();
+            if (paymentType == Constants.MembershipPayment)
+                iPaymentService = new MembershipPayment();
             return iPaymentService;
         }
     }

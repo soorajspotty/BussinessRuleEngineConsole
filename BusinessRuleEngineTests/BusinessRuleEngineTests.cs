@@ -39,5 +39,16 @@ namespace BusinessRuleEngineTests
             Assert.AreEqual(message, Constants.BookPaymentSuccessMessage);
         }
 
+        [Test]
+        public void Process_Membership_Success()
+        {
+            //Arrange
+            iPaymentService = PaymentFactory.GetPaymentType(Constants.MembershipPayment);
+            //Act
+            string message = iPaymentService.ProcessPaymenRequest();
+            //Assret
+            Assert.AreEqual(message, Constants.MembershipPaymentSuccessMessage);
+        }
+
     }
 }
