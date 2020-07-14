@@ -1,4 +1,5 @@
 ﻿using BusinessRuleProcessor;
+using BusinsessConstants;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -20,11 +21,11 @@ namespace BusinessRuleEngineTests
         public void Process_PhycicalProductPayment_Success()
         {
             //Arrange
-            iPaymentService = PaymentFactory.GetPaymentType("Physical Product Payment");
+            iPaymentService = PaymentFactory.GetPaymentType(Constants.PhysicalProductPayment);
             //Act
             string message = iPaymentService.ProcessPaymenRequest();
             //Assret
-            Assert.AreEqual(message, "Payment Successfull & Genererated a packaging slip for shipping");
+            Assert.AreEqual(message, Constants.PhysicalProductPaymentSuccessMessage);
         }
     }
 }

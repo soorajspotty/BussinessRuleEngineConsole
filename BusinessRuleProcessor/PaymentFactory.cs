@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BusinessRuleProcessor.PaymentMethods;
+using BusinsessConstants;
 
 namespace BusinessRuleProcessor
 {
@@ -15,7 +16,7 @@ namespace BusinessRuleProcessor
         public static IPaymentService GetPaymentType(string paymentType)
         {
             IPaymentService iPaymentService = null;
-            if (paymentType == "Physical Product Payment")
+            if (paymentType == Constants.PhysicalProductPayment)
                 iPaymentService = new PhysicalProductPayment();
             return iPaymentService;
         }
