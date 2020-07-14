@@ -11,9 +11,11 @@ namespace BusinsessConstants
         public const string PhysicalProductPayment = "Physical Product Payment";
         public const string BookPayment = "Book Payment";
         public const string MembershipPayment = "Membership Payment";
+        public const string UpgradeToMembershipPayment = "Upgrade To Membership Payment";
 
         public const string PhysicalProductPaymentSuccessMessage = "Payment Successfull & Genererated a packaging slip for shipping";
         public const string BookPaymentSuccessMessage = "Payment Successfull & Created duplicate packaging slip for shipping royality department";
         public const string MembershipPaymentSuccessMessage = "Payment processed & Activated membership";
+        public const string UpgradeToMembershipPaymentSuccessMessage = "Membership upgraded and Confirmation Email send";
     }
 }
