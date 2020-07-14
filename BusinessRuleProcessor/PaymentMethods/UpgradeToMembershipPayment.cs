@@ -1,12 +1,25 @@
-﻿using BusinsessConstants;
+﻿using BusinessRuleProcessor.EmailService;
+using BusinsessConstants;
+using System.Text.RegularExpressions;
 
 namespace BusinessRuleProcessor.PaymentMethods
 {
     class UpgradeToMembershipPayment : IPaymentService
     {
+        IEmailService iEmailService = null;
         public string ProcessPaymenRequest()
         {
-            return (Constants.UpgradeToMembershipPaymentSuccessMessage);
+            string returnMessage = string.Empty;
+            iEmailService = new EmailHelper();
+            if(iEmailService.SendEmail(Constants.UpgradeToMembershipPaymentSuccessMessage))
+            {
+                returnMessage = Constants.UpgradeToMembershipPaymentSuccessMessage;
+            }
+            else
+            {
+                returnMessage = Constants.UpgradeToMembershipPaymentFailureMessage;
+            }
+            return returnMessage;
         }
     }
 }

@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmailService\EmailService.cs" />
+    <Compile Include="EmailService\IEmailService.cs" />
     <Compile Include="IPaymentService.cs" />
     <Compile Include="PaymentFactory.cs" />
     <Compile Include="PaymentMethods\BookPayment.cs" />

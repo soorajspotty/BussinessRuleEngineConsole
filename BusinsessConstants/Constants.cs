@@ -20,6 +20,9 @@ namespace BusinsessConstants
         public const string UpgradeToMembershipPaymentSuccessMessage = "Membership upgraded and Confirmation Email send";
         public const string VideoPaymenSuccessMessage = "Payment Successfull & Added a Free Aid video to packing slip";
 
+
+        public const string UpgradeToMembershipPaymentFailureMessage = "Membership upgade failed";
+
         //Form a static readonly payment options dictionary to be used anywhere in application.
         public readonly static Dictionary<int, string> DictPaymentMethods = new Dictionary<int, string>()
         {
