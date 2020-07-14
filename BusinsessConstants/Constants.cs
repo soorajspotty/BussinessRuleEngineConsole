@@ -14,7 +14,7 @@ namespace BusinsessConstants
         public const string UpgradeToMembershipPayment = "Upgrade To Membership Payment";
         public const string VideoPayment = "Video Payment";
 
-        public const string PhysicalProductPaymentSuccessMessage = "Payment Successfull & Genererated a packaging slip for shipping";
+        public const string PhysicalProductPaymentSuccessMessage = "Payment Successfull & Genererated a packaging slip for shipping & Agent Commision generated";
         public const string BookPaymentSuccessMessage = "Payment Successfull & Created duplicate packaging slip for shipping royality department";
         public const string MembershipPaymentSuccessMessage = "Payment processed & Activated membership";
         public const string UpgradeToMembershipPaymentSuccessMessage = "Membership upgraded and Confirmation Email send";
@@ -22,6 +22,7 @@ namespace BusinsessConstants
 
 
         public const string UpgradeToMembershipPaymentFailureMessage = "Membership upgade failed";
+        public const string PhysicalProductPaymentFailureMessage = "Physical Product payment failed";
 
         //Form a static readonly payment options dictionary to be used anywhere in application.
         public readonly static Dictionary<int, string> DictPaymentMethods = new Dictionary<int, string>()

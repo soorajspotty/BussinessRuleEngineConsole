@@ -4,6 +4,9 @@ using System.Text.RegularExpressions;
 
 namespace BusinessRuleProcessor.PaymentMethods
 {
+    /// <summary>
+    /// Upgrade To Membership Payment handling module
+    /// </summary>
     class UpgradeToMembershipPayment : IPaymentService
     {
         IEmailService iEmailService = null;

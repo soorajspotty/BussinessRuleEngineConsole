@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgentCommission\AgentCommisionService.cs" />
+    <Compile Include="AgentCommission\IAgentCommision.cs" />
     <Compile Include="EmailService\EmailService.cs" />
     <Compile Include="EmailService\IEmailService.cs" />
     <Compile Include="IPaymentService.cs" />

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace BusinessRuleProcessor.EmailService
 {
+    /// <summary>
+    /// Interface to access email services
+    /// </summary>
     interface IEmailService
     {
         bool SendEmail(string messgae);

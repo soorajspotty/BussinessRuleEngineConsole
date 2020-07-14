@@ -5,14 +5,11 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessRuleProcessor.EmailService
+namespace BusinessRuleProcessor.AgentCommission
 {
-    /// <summary>
-    /// Class that provides services for sending Emails on request
-    /// </summary>
-    class EmailHelper : IEmailService
+    class AgentCommisionService : IAgentCommision
     {
-        public bool SendEmail(string messgae)
+        public bool GenerateAgentCommision(double percentage)
         {
             return true;
         }
