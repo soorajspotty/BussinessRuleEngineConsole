@@ -47,6 +47,7 @@
     <Compile Include="PaymentMethods\MembershipPayment.cs" />
     <Compile Include="PaymentMethods\PhysicalProductPayment.cs" />
     <Compile Include="PaymentMethods\UpgradeToMembershipPayment.cs" />
+    <Compile Include="PaymentMethods\VideoPayment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

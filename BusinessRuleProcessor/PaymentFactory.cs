@@ -24,6 +24,9 @@ namespace BusinessRuleProcessor
                 iPaymentService = new MembershipPayment();
             if (paymentType == Constants.UpgradeToMembershipPayment)
                 iPaymentService = new UpgradeToMembershipPayment();
+            if (paymentType == Constants.VideoPayment)
+                iPaymentService = new VideoPayment();
+
             return iPaymentService;
         }
     }

@@ -61,5 +61,16 @@ namespace BusinessRuleEngineTests
             Assert.AreEqual(message, Constants.UpgradeToMembershipPaymentSuccessMessage);
         }
 
+        [Test]
+        public void Process_VideoPayment_Success()
+        {
+            //Arrange
+            iPaymentService = PaymentFactory.GetPaymentType(Constants.VideoPayment);
+            //Act
+            string message = iPaymentService.ProcessPaymenRequest();
+            //Assret
+            Assert.AreEqual(message, Constants.VideoPaymenSuccessMessage);
+        }
+
     }
 }
