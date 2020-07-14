@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessRuleProcessor\BusinessRuleProcessor.csproj">
+      <Project>{ef5832f5-8f4f-4521-9f99-b91e316efab1}</Project>
+      <Name>BusinessRuleProcessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinsessConstants\BusinsessConstants.csproj">
+      <Project>{8fe13a44-a74a-482e-a982-912ecd2586ed}</Project>
+      <Name>BusinsessConstants</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
