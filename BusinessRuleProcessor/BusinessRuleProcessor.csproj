@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="IPaymentService.cs" />
     <Compile Include="PaymentFactory.cs" />
+    <Compile Include="PaymentMethods\BookPayment.cs" />
     <Compile Include="PaymentMethods\PhysicalProductPayment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

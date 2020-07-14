@@ -27,5 +27,17 @@ namespace BusinessRuleEngineTests
             //Assret
             Assert.AreEqual(message, Constants.PhysicalProductPaymentSuccessMessage);
         }
+
+        [Test]
+        public void Process_BookPayment_Success()
+        {
+            //Arrange
+            iPaymentService = PaymentFactory.GetPaymentType(Constants.BookPayment);
+            //Act
+            string message = iPaymentService.ProcessPaymenRequest();
+            //Assret
+            Assert.AreEqual(message, Constants.BookPaymentSuccessMessage);
+        }
+
     }
 }
